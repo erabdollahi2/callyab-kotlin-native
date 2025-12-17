@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CallyAB Native Android App
 
 این پروژه شامل نسخه Native Android (Kotlin) برای اپلیکیشن CallyAB است.
@@ -23,3 +24,7 @@
 - 💾 SQLite دیتابیس
 - 🔐 سیستم احراز هویت
 - 📊 مدیریت داده‌ها
+=======
+# callyab-kotlin-native
+CallyAB Native Android App in Kotlin
+>>>>>>> 14aed2b5cec76aad20b8c4b90441d649a9bc028b
