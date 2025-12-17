@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@xml/backup_rules">
+
+    <!-- Full backup rules for the application -->
+    <full-backup-content>
+        <!-- Include application data -->
+        <include domain="database" />
+        <include domain="sharedpref" />
+        <include domain="file" />
+        
+        <!-- Exclude cache and temporary files -->
+        <exclude domain="cache" />
+        <exclude domain="no_backup" />
+        <exclude domain="database" path="contacts.db-wal" />
+        <exclude domain="database" path="contacts.db-shm" />
+        
+        <!-- Exclude sensitive user data -->
+        <exclude domain="sharedpref" path="user_credentials.xml" />
+        <exclude domain="file" path="sensitive/" />
+    </full-backup-content>
+
+</resources>

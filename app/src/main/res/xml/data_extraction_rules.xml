@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@xml/data_extraction_rules">
+
+    <!-- Rules for data extraction during backup -->
+    <data-extraction-rules>
+        <cloud-backup disableIfNoEncryptionCapabilities="false">
+            <!-- Include application data -->
+            <include domain="database" />
+            <include domain="sharedpref" />
+            
+            <!-- Exclude sensitive data -->
+            <exclude domain="database" path="contacts.db-wal" />
+            <exclude domain="database" path="contacts.db-shm" />
+            <exclude domain="sharedpref" path="user_credentials.xml" />
+        </cloud-backup>
+        
+        <device-transfer>
+            <!-- Include most application data for device transfer -->
+            <include domain="database" />
+            <include domain="sharedpref" />
+            
+            <!-- Exclude temporary files -->
+            <exclude domain="cache" />
+            <exclude domain="no_backup" />
+        </device-transfer>
+    </data-extraction-rules>
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ابعاد فاصله -->
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_extra_large">24dp</dimen>
+    
+    <!-- ابعاد padding -->
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_extra_large">24dp</dimen>
+    
+    <!-- اندازه متن -->
+    <dimen name="text_size_caption">12sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_button">16sp</dimen>
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_headline">20sp</dimen>
+    <dimen name="text_size_display">24sp</dimen>
+    
+    <!-- اندازه دکمه -->
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_min_width">64dp</dimen>
+    <dimen name="button_corner_radius">8dp</dimen>
+    
+    <!-- اندازه فیلد ورودی -->
+    <dimen name="input_field_height">56dp</dimen>
+    <dimen name="input_field_corner_radius">8dp</dimen>
+    
+    <!-- اندازه کارت -->
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+    
+    <!-- اندازه آیکون -->
+    <dimen name="icon_size_small">16dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    <dimen name="icon_size_extra_large">48dp</dimen>
+    
+    <!-- اندازه Toolbar -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    
+    <!-- اندازه Tab -->
+    <dimen name="tab_height">48dp</dimen>
+    
+    <!-- اندازه FAB -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_elevation">8dp</dimen>
+    
+    <!-- اندازه List Item -->
+    <dimen name="list_item_height">72dp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+    
+    <!-- اندازه Dialog -->
+    <dimen name="dialog_corner_radius">16dp</dimen>
+    <dimen name="dialog_elevation">8dp</dimen>
+    
+    <!-- اندازه Caller ID Overlay -->
+    <dimen name="overlay_width">300dp</dimen>
+    <dimen name="overlay_padding">20dp</dimen>
+    <dimen name="overlay_corner_radius">16dp</dimen>
+    <dimen name="overlay_elevation">16dp</dimen>
+    
+    <!-- اندازه Dashboard Items -->
+    <dimen name="dashboard_item_size">120dp</dimen>
+    <dimen name="dashboard_item_margin">12dp</dimen>
+    
+    <!-- خط کش -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="border_width">1dp</dimen>
+    
+    <!-- فاصله خاص صفحات -->
+    <dimen name="login_form_margin">32dp</dimen>
+    <dimen name="login_button_margin_top">24dp</dimen>
+    
+    <!-- ابعاد مخصوص تبلت -->
+    <dimen name="tablet_margin">32dp</dimen>
+    <dimen name="tablet_padding">24dp</dimen>
+    
+    <!-- حداکثر عرض -->
+    <dimen name="max_width">400dp</dimen>
+    <dimen name="form_max_width">320dp</dimen>
+    
+    <!-- ارتفاع هدر -->
+    <dimen name="header_height">200dp</dimen>
+    
+    <!-- ابعاد تصاویر -->
+    <dimen name="avatar_size">64dp</dimen>
+    <dimen name="logo_size">128dp</dimen>
+    
+    <!-- فاصله انیمیشن -->
+    <dimen name="animation_offset">100dp</dimen>
+    
+    <!-- ابعاد مخصوص landscape -->
+    <dimen name="landscape_margin">16dp</dimen>
+    <dimen name="landscape_padding">12dp</dimen>
+</resources>

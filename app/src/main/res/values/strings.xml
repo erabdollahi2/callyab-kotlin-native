@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- نام اپلیکیشن -->
+    <string name="app_name">کال یاب</string>
+    <string name="app_name_english">CallyAB</string>
+    
+    <!-- عناوین صفحات -->
+    <string name="login_title">ورود به سیستم</string>
+    <string name="dashboard_title">داشبورد</string>
+    <string name="lookup_title">جستجوی مخاطب</string>
+    <string name="account_title">حساب کاربری</string>
+    <string name="charge_title">شارژ حساب</string>
+    <string name="admin_title">پنل مدیریت</string>
+    <string name="support_title">پشتیبانی</string>
+    
+    <!-- متن‌های ورودی -->
+    <string name="hint_username">نام کاربری</string>
+    <string name="hint_password">رمز عبور</string>
+    <string name="hint_search">جستجوی نام، موبایل، کد ملی...</string>
+    <string name="hint_national_code">کد ملی</string>
+    <string name="hint_mobile">شماره موبایل</string>
+    <string name="hint_card_number">شماره کارت</string>
+    <string name="hint_full_name">نام کامل</string>
+    
+    <!-- متن دکمه‌ها -->
+    <string name="btn_login">ورود</string>
+    <string name="btn_logout">خروج</string>
+    <string name="btn_search">جستجو</string>
+    <string name="btn_clear">پاک کردن</string>
+    <string name="btn_save">ذخیره</string>
+    <string name="btn_cancel">انصراف</string>
+    <string name="btn_ok">تایید</string>
+    <string name="btn_back">بازگشت</string>
+    <string name="btn_retry">تلاش مجدد</string>
+    <string name="btn_settings">تنظیمات</string>
+    <string name="btn_import">وارد کردن فایل</string>
+    <string name="btn_export">صادر کردن</string>
+    <string name="btn_charge_account">شارژ حساب</string>
+    <string name="btn_admin_panel">پنل مدیریت</string>
+    <string name="btn_support">پشتیبانی</string>
+    
+    <!-- پیام‌های خطا -->
+    <string name="error_network">خطا در اتصال به اینترنت</string>
+    <string name="error_login_failed">ورود ناموفق - نام کاربری یا رمز عبور اشتباه</string>
+    <string name="error_invalid_input">ورودی نامعتبر</string>
+    <string name="error_database">خطا در پایگاه داده</string>
+    <string name="error_permission_denied">مجوز مورد نیاز اعطا نشده</string>
+    <string name="error_file_not_found">فایل پیدا نشد</string>
+    <string name="error_unknown">خطای نامشخص رخ داده</string>
+    <string name="error_empty_field">فیلد نمی‌تواند خالی باشد</string>
+    <string name="error_invalid_mobile">شماره موبایل نامعتبر</string>
+    <string name="error_invalid_national_code">کد ملی نامعتبر</string>
+    <string name="error_no_results">هیچ نتیجه‌ای یافت نشد</string>
+    
+    <!-- پیام‌های موفقیت -->
+    <string name="success_login">ورود موفقیت‌آمیز</string>
+    <string name="success_logout">خروج انجام شد</string>
+    <string name="success_search">جستجو کامل شد</string>
+    <string name="success_data_saved">داده‌ها ذخیره شد</string>
+    <string name="success_file_imported">فایل با موفقیت وارد شد</string>
+    <string name="success_file_exported">فایل با موفقیت صادر شد</string>
+    <string name="success_sync">همگام‌سازی انجام شد</string>
+    
+    <!-- برچسب‌های اطلاعات -->
+    <string name="label_full_name">نام کامل:</string>
+    <string name="label_mobile">موبایل:</string>
+    <string name="label_national_code">کد ملی:</string>
+    <string name="label_card_number">شماره کارت:</string>
+    <string name="label_father_name">نام پدر:</string>
+    <string name="label_birth_date">تاریخ تولد:</string>
+    <string name="label_address">آدرس:</string>
+    <string name="label_phone">تلفن:</string>
+    <string name="label_email">ایمیل:</string>
+    <string name="label_postal_code">کد پستی:</string>
+    <string name="label_total_contacts">تعداد مخاطبین:</string>
+    <string name="label_search_results">نتایج جستجو:</string>
+    <string name="label_account_balance">موجودی حساب:</string>
+    <string name="label_last_login">آخرین ورود:</string>
+    
+    <!-- متن‌های Caller ID -->
+    <string name="caller_id_unknown">تماس ناشناس</string>
+    <string name="caller_id_not_found">این شماره در پایگاه داده یافت نشد</string>
+    <string name="caller_id_found">مخاطب یافت شد</string>
+    <string name="caller_id_service_running">سرویس شناسایی تماس فعال است</string>
+    <string name="caller_id_service_description">شناسایی تماس‌های ورودی در حال اجرا</string>
+    
+    <!-- متن‌های مجوزها -->
+    <string name="permission_phone_state">برای شناسایی تماس‌های ورودی</string>
+    <string name="permission_call_log">برای خواندن سابقه تماس‌ها</string>
+    <string name="permission_contacts">برای خواندن مخاطبین</string>
+    <string name="permission_storage">برای ذخیره فایل‌ها</string>
+    <string name="permission_overlay">برای نمایش اطلاعات تماس</string>
+    <string name="permission_required">مجوز مورد نیاز</string>
+    <string name="permission_denied">مجوز رد شده</string>
+    <string name="permission_settings">تنظیمات مجوزها</string>
+    <string name="permission_go_to_settings">برای فعال کردن مجوزها، به تنظیمات بروید</string>
+    
+    <!-- متن‌های فایل -->
+    <string name="file_choose">انتخاب فایل</string>
+    <string name="file_importing">در حال وارد کردن فایل...</string>
+    <string name="file_exporting">در حال صادر کردن فایل...</string>
+    <string name="file_size_limit">حداکثر اندازه فایل: 50 مگابایت</string>
+    <string name="file_format_csv">فرمت مجاز: CSV</string>
+    
+    <!-- متن‌های عمومی -->
+    <string name="loading">در حال بارگذاری...</string>
+    <string name="processing">در حال پردازش...</string>
+    <string name="please_wait">لطفاً صبر کنید</string>
+    <string name="empty_list">لیست خالی</string>
+    <string name="no_data">داده‌ای موجود نیست</string>
+    <string name="welcome">خوش آمدید</string>
+    <string name="goodbye">خداحافظ</string>
+    
+    <!-- متن‌های شارژ حساب -->
+    <string name="charge_plan_10">10 استفاده - 50,000 تومان</string>
+    <string name="charge_plan_50">50 استفاده - 220,000 تومان</string>
+    <string name="charge_plan_100">100 استفاده - 400,000 تومان</string>
+    <string name="charge_select_plan">انتخاب بسته</string>
+    <string name="charge_payment_gateway">درگاه پرداخت</string>
+    
+    <!-- متن‌های پنل مدیریت -->
+    <string name="admin_statistics">آمار کلی</string>
+    <string name="admin_user_management">مدیریت کاربران</string>
+    <string name="admin_database_management">مدیریت پایگاه داده</string>
+    <string name="admin_reports">گزارش‌ها</string>
+    
+    <!-- متن‌های پشتیبانی -->
+    <string name="support_contact">تماس با پشتیبانی</string>
+    <string name="support_email">support@callyab.ir</string>
+    <string name="support_phone">021-1234567</string>
+    <string name="support_website">www.callyab.ir</string>
+    
+    <!-- متن‌های تنظیمات -->
+    <string name="settings_caller_id_enabled">فعال کردن شناسایی تماس</string>
+    <string name="settings_overlay_enabled">نمایش overlay</string>
+    <string name="settings_auto_start">شروع خودکار</string>
+    <string name="settings_notifications">اعلان‌ها</string>
+    <string name="settings_about">درباره نرم‌افزار</string>
+    
+    <!-- متن‌های درباره -->
+    <string name="about_version">نسخه 1.0.0</string>
+    <string name="about_developer">توسعه‌یافته توسط تیم کال یاب</string>
+    <string name="about_copyright">© 2024 CallyAB. All rights reserved.</string>
+    
+    <!-- متن‌های validation -->
+    <string name="validation_mobile_format">شماره موبایل باید 11 رقم و با 09 شروع شود</string>
+    <string name="validation_national_code_format">کد ملی باید 10 رقم باشد</string>
+    <string name="validation_card_number_format">شماره کارت باید 16 رقم باشد</string>
+    <string name="validation_email_format">فرمت ایمیل نامعتبر</string>
+    <string name="validation_required_field">این فیلد اجباری است</string>
+    
+</resources>

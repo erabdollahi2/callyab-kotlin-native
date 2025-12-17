@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme اصلی اپلیکیشن -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight">
+        <!-- رنگ‌های اصلی -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        
+        <!-- رنگ پس‌زمینه -->
+        <item name="android:windowBackground">@color/background_primary</item>
+        <item name="backgroundColor">@color/background_secondary</item>
+        
+        <!-- متن -->
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        
+        <!-- وضعیت نوار -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        
+        <!-- سایر تنظیمات -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+
+    <!-- Theme برای MainActivity -->
+    <style name="Theme.CallyabNative" parent="AppTheme">
+        <item name="android:windowSplashScreenBackground">@color/primary</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+    </style>
+
+    <!-- Theme برای Activity های بدون نوار عنوان -->
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Theme برای صفحه ورود -->
+    <style name="LoginTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/login_background</item>
+    </style>
+
+    <!-- Style برای دکمه‌های اصلی -->
+    <style name="PrimaryButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/button_primary</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Style برای دکمه‌های ثانویه -->
+    <style name="SecondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/button_secondary</item>
+        <item name="android:textColor">@color/button_secondary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Style برای دکمه‌های خطر -->
+    <style name="DangerButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/button_danger</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Style برای فیلدهای ورودی -->
+    <style name="InputField" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/border_focused</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Style برای EditText داخل فیلدهای ورودی -->
+    <style name="InputEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!-- Style برای کارت‌ها -->
+    <style name="CardStyle" parent="Widget.Material3.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">6dp</item>
+        <item name="cardBackgroundColor">@color/background_card</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <!-- Style برای متن عنوان -->
+    <style name="TitleText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Style برای متن زیرعنوان -->
+    <style name="SubtitleText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!-- Style برای متن بدنه -->
+    <style name="BodyText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <!-- Style برای متن کوچک -->
+    <style name="CaptionText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- Style برای Toolbar -->
+    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="titleTextColor">@color/text_white</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Style برای ProgressBar -->
+    <style name="ProgressBarStyle" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="android:indeterminateTint">@color/primary</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- Style برای FloatingActionButton -->
+    <style name="FABStyle" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- Style برای TabLayout -->
+    <style name="TabLayoutStyle" parent="Widget.Material3.TabLayout">
+        <item name="tabIndicatorColor">@color/accent</item>
+        <item name="tabSelectedTextColor">@color/primary</item>
+        <item name="tabTextColor">@color/text_secondary</item>
+        <item name="android:background">@color/background_primary</item>
+    </style>
+
+    <!-- Style برای RecyclerView -->
+    <style name="RecyclerViewStyle">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarThumbVertical">@color/primary_light</item>
+    </style>
+
+    <!-- Style برای Dialog -->
+    <style name="DialogStyle" parent="Theme.Material3.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <!-- Style برای Alert Dialog -->
+    <style name="AlertDialogStyle" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/AlertDialogTitle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AlertDialogBody</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AlertDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AlertDialogButton</item>
+    </style>
+
+    <style name="AlertDialogTitle" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AlertDialogBody" parent="MaterialAlertDialog.Material3.Body.Text">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AlertDialogButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style برای Caller ID Overlay -->
+    <style name="CallerIdOverlayStyle">
+        <item name="android:background">@drawable/overlay_background</item>
+        <item name="android:elevation">16dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Style برای آیکون‌های Dashboard -->
+    <style name="DashboardIcon">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:tint">@color/primary</item>
+    </style>
+
+    <!-- Style برای متن آیتم‌های Dashboard -->
+    <style name="DashboardItemText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <!-- Style برای ListView -->
+    <style name="ListViewStyle">
+        <item name="android:divider">@color/border_light</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:listSelector">@drawable/list_item_selector</item>
+    </style>
+
+    <!-- Style برای متن خطا -->
+    <style name="ErrorText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_error</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- Style برای متن موفقیت -->
+    <style name="SuccessText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_success</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- Style برای متن هشدار -->
+    <style name="WarningText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_warning</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:gravity">start</item>
+    </style>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions برای تشخیص هویت تماس گیرنده -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".CallyabApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="کال یاب - CallyAB"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CallyabNative"
+        tools:targetApi="31">
+        
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Dashboard Activity -->
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Lookup Activity -->
+        <activity
+            android:name=".activities.LookupActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Account Activity -->
+        <activity
+            android:name=".activities.AccountActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Charge Activity -->
+        <activity
+            android:name=".activities.ChargeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Admin Panel Activity -->
+        <activity
+            android:name=".activities.AdminPanelActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Support Activity -->
+        <activity
+            android:name=".activities.SupportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Phone State Receiver for Caller ID -->
+        <receiver 
+            android:name=".receivers.PhoneStateReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- Boot Receiver for Auto-Start -->
+        <receiver
+            android:name=".receivers.BootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Background Service for Caller ID -->
+        <service
+            android:name=".services.CallerIdBackgroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="phoneCall" />
+            
+        <!-- Overlay Service for Caller ID Display -->
+        <service
+            android:name=".overlay.CallerIdOverlayService"
+            android:enabled="true"
+            android:exported="false" />
+            
+    </application>
+
+</manifest>
